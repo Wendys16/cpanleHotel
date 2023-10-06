@@ -22,3 +22,7 @@ function closeModal(accion) {
         document.getElementById("modalEditarHabitacion").style.display = "none";
     }
 }
+
+function verGrafica(){
+    window.location.href = "grafica.html";
+}

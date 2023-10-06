@@ -49,21 +49,25 @@
         <div class="p-4 sm:ml-64">
             <div class="p-0">
                 <div
-                    class="mb-5 border-b-4 border-gray-400 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center">
+                    class="mb-5 border-b-4 border-gray-200 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center">
                     <div class="w-full text-center space-y-3">
-                        <h1 class="font-medium shadow-lg rounded-lg">HOTEL LAS PALMERAS</h1>
+                        <h1 class="text-3xl shadow-xl rounded-lg font-serif" style="text-shadow: 5px -2px 4px gray">HOTEL LAS PALMERAS</h1>
                         <p class="italic">Barranquilla, atlantico</p>
                         <p class="italic">Nit: 999974877</p>
                         <p class="italic">Direccion: Cra 25 N° 4-5</p>
 
-                        <button type="button" title="Editar" onclick="openModal('editarHotel')"
-                            class="font-medium rounded-lg text-sm  px-1 py-1 mr-2">
+                        <button type="button" title="Editar Informacion del Hotel" onclick="openModal('editarHotel')"
+                            class="font-medium text-sm p-2 mr-2 shadow-sm shadow-black rounded-full hover:bg-gray-100  border border-solid  border-gray-300">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
                                     style="color: teal" />
                             </svg>
+                        </button>
+                        <button type="button" title="Ver Grafica" onclick="verGrafica()"
+                            class="font-medium text-sm  p-2 mr-2 shadow-sm shadow-black rounded-full hover:bg-gray-100 border border-solid  border-gray-300">
+                            <svg  xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 576 512" style="fill:#ff4200"><path d="M32 32c17.7 0 32 14.3 32 32V400c0 8.8 7.2 16 16 16H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H80c-44.2 0-80-35.8-80-80V64C0 46.3 14.3 32 32 32zM160 224c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V256c0-17.7 14.3-32 32-32zm128-64V320c0 17.7-14.3 32-32 32s-32-14.3-32-32V160c0-17.7 14.3-32 32-32s32 14.3 32 32zm64 32c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32zM480 96V320c0 17.7-14.3 32-32 32s-32-14.3-32-32V96c0-17.7 14.3-32 32-32s32 14.3 32 32z"/></svg>
                         </button>
                     </div>
                     <div class="w-full rounded-lg">
@@ -96,7 +100,7 @@
                                     <p>Tipo Estandar</p>
                                     <p>Acomodacion doble</p>
                                 </div>
-                                <div class="p-2 flex items-end">
+                                <div class="p-2 flex items-end h-16">
                                     <button type="button" title="Editar" onclick="openModal('editarHabitacion')"
                                         class="font-medium rounded-lg text-sm  px-1 py-1 mr-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -129,8 +133,7 @@
                                 </div>
                             </div>
                             <div class="w-3/6 h-full rounded p-1">
-                                <img class="w-full h-full rounded" src="./img/habitaciones/h1.jpg"
-                                    alt="no hay imagen">
+                                <img class="w-full h-full rounded" src="./img/habitaciones/h1.jpg" alt="no hay imagen">
                             </div>
                         </div>
                         <div class="flex  h-40 rounded bg-gray-50 shadow-md shadow-gray-400 border border-gray-200 ">
@@ -141,7 +144,7 @@
                                     <p>Tipo junior</p>
                                     <p>Acomodacion sencilla</p>
                                 </div>
-                                <div class="p-2 flex items-end">
+                                <div class="p-2 flex items-end h-16">
                                     <button type="button" title="Editar" onclick="openModal('editarHabitacion')"
                                         class="font-medium rounded-lg text-sm  px-1 py-1 mr-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -185,7 +188,7 @@
                                     <p>Tipo Estandar</p>
                                     <p>Acomodacion triple</p>
                                 </div>
-                                <div class="p-2 flex items-end">
+                                <div class="p-2 flex items-end h-16">
                                     <button type="button" title="Editar" onclick="openModal('editarHabitacion')"
                                         class="font-medium rounded-lg text-sm  px-1 py-1 mr-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -229,7 +232,7 @@
                                     <p>Tipo Estandar</p>
                                     <p>Acomodacion cuadruple</p>
                                 </div>
-                                <div class="p-2 flex items-end">
+                                <div class="p-2 flex items-end h-16">
                                     <button type="button" title="Editar" onclick="openModal('editarHabitacion')"
                                         class="font-medium rounded-lg text-sm  px-1 py-1 mr-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -274,7 +277,7 @@
                                     <p>Tipo junior</p>
                                     <p>Acomodacion sencilla</p>
                                 </div>
-                                <div class="p-2 flex items-end">
+                                <div class="p-2 flex items-end h-16">
                                     <button type="button" title="Editar" onclick="openModal('editarHabitacion')"
                                         class="font-medium rounded-lg text-sm  px-1 py-1 mr-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -319,7 +322,7 @@
                                     <p>Tipo suite</p>
                                     <p>Acomodacion doble</p>
                                 </div>
-                                <div class="p-2 flex items-end">
+                                <div class="p-2 flex items-end h-16">
                                     <button type="button" title="Editar" onclick="openModal('editarHabitacion')"
                                         class="font-medium rounded-lg text-sm  px-1 py-1 mr-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -383,7 +386,8 @@
                                                 id="modal-title">
                                                 Confirmar eliminacion</h3>
                                             <div class="mt-2">
-                                                <p class="text-sm text-gray-500">Esta seguro de eliminar está habitación?
+                                                <p class="text-sm text-gray-500">Esta seguro de eliminar está
+                                                    habitación?
                                                 </p>
                                             </div>
                                         </div>
@@ -432,31 +436,34 @@
                                             <div class="w-full mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                                                 <div class="mb-4">
                                                     <label for="nombre"
-                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Codigo habitacion:</label>
+                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Codigo
+                                                        habitacion:</label>
                                                     <input type="text" name="nombre" id="nombre"
                                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                                         required>
                                                 </div>
                                                 <div class="mb-4">
                                                     <label for="direccion"
-                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tipo de habitacion:</label>
-                                                        <select name="" id="" required>
-                                                            <option selected value="">Seleccione</option>
-                                                            <option value="">Estandar</option>
-                                                            <option value="">Junior</option>
-                                                            <option value="">Suite</option>
-                                                        </select>
+                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tipo
+                                                        de habitacion:</label>
+                                                    <select name="" id="" required>
+                                                        <option selected value="">Seleccione</option>
+                                                        <option value="">Estandar</option>
+                                                        <option value="">Junior</option>
+                                                        <option value="">Suite</option>
+                                                    </select>
                                                 </div>
                                                 <div class="mb-4">
                                                     <label for="numHabit"
-                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Acomodacion de la habitacion:</label>
-                                                        <select name="" id="" required>
-                                                            <option selected value="">Seleccione</option>
-                                                            <option value="">Sencilla</option>
-                                                            <option value="">Doble</option>
-                                                            <option value="">Triple</option>
-                                                            <option value="">Cuadruple</option>
-                                                        </select>
+                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Acomodacion
+                                                        de la habitacion:</label>
+                                                    <select name="" id="" required>
+                                                        <option selected value="">Seleccione</option>
+                                                        <option value="">Sencilla</option>
+                                                        <option value="">Doble</option>
+                                                        <option value="">Triple</option>
+                                                        <option value="">Cuadruple</option>
+                                                    </select>
                                                 </div>
 
                                             </div>
